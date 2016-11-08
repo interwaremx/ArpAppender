@@ -10,7 +10,7 @@ Arp appender is a log4j 1.X appender to filter and send formated log messages to
 * Reconnection on error and disconnection
 
 ## Language
- * Purely java
+ * Pure java
 
 ## Requirements
  * Log4j 1.X
