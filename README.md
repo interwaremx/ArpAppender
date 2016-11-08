@@ -18,6 +18,7 @@ Arp appender is a log4j 1.X appender to filter and send formated log messages to
 ## Installation
 1. Make sure you already set up log4j 1.X in your project
 2. Add ArpAppender jar to your project's classpath
+3. Add the ArpAppender configuration to your log4j configuration
 
 ## Properties:
 ```
