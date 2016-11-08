@@ -20,14 +20,14 @@ Arp appender is a log4j 1.X appender to filter and send formated log messages to
 2. Add ArpAppender jar to your project's classpath
 
 ## Properties:
-log4j.appender.arquimides=mx.com.interware.arp.appender.ArquimidesAppender
-log4j.appender.arquimides.regexp=.*(EJECUTANDO) +([a-zA-Z0-9]+).*time .>>.*|.*(FINALIZANDO) +([a-zA-Z0-9]+).*time .>> +([0-9]+).* 
-log4j.appender.arquimides.ednFormat=:thread "%thread%", :timestamp %timestamp%, :level "%level%", :start "%s", :tx "%s", :end "%s", :tx "%s", :delta "%s"
-log4j.appender.arquimides.host=127.0.0.1
-log4j.appender.arquimides.port=55555
-log4j.appender.arquimides.reconnectionTime=10000
-log4j.appender.arquimides.maxQueue=5
-log4j.appender.arquimides.sendDelta=1000
+log4j.appender.arquimides=mx.com.interware.arp.appender.ArquimidesAppender  
+log4j.appender.arquimides.regexp=.*(EJECUTANDO) +([a-zA-Z0-9]+).*time .>>.*|.*(FINALIZANDO) +([a-zA-Z0-9]+).*time .>> +([0-9]+).*  
+log4j.appender.arquimides.ednFormat=:thread "%thread%", :timestamp %timestamp%, :level "%level%", :start "%s", :tx "%s", :end "%s", :tx "%s", :delta "%s"  
+log4j.appender.arquimides.host=127.0.0.1  
+log4j.appender.arquimides.port=55555  
+log4j.appender.arquimides.reconnectionTime=10000  
+log4j.appender.arquimides.maxQueue=5  
+log4j.appender.arquimides.sendDelta=1000  
 
 ## Features
 For ednFormat key at properties file, there are some keywords:
