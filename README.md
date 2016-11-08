@@ -20,32 +20,31 @@ Arp appender is a log4j 1.X appender to filter and send formated log messages to
 2. Add ArpAppender jar to your project's classpath
 
 ## Properties:
-log4j.appender.arquimides=mx.com.interware.arp.appender.ArquimidesAppender  
-log4j.appender.arquimides.regexp=.*(EJECUTANDO) +([a-zA-Z0-9]+).*time .>>.*|.*(FINALIZANDO) +([a-zA-Z0-9]+).*time .>> +([0-9]+).*  
-log4j.appender.arquimides.ednFormat=:thread "%thread%", :timestamp %timestamp%, :level "%level%", :start "%s", :tx "%s", :end "%s", :tx "%s", :delta "%s"  
-log4j.appender.arquimides.host=127.0.0.1  
-log4j.appender.arquimides.port=55555  
-log4j.appender.arquimides.reconnectionTime=10000  
-log4j.appender.arquimides.maxQueue=5  
-log4j.appender.arquimides.sendDelta=1000  
+```
+log4j.rootLogger = DEBUG, FILE, arquimedes
+
+#Arquimedes
+log4j.appender.arquimedes=mx.com.interware.arp.appender.ArquimidesAppender
+log4j.appender.arquimedes.regexp=.*(EJECUTANDO) +([a-zA-Z0-9]+).*time .>>.*|.*(FINALIZANDO) +([a-zA-Z0-9]+).*time .>> +([0-9]+).*
+#keywords: %thread% %timestamp% %level% %mensaje% 
+log4j.appender.arquimedes.ednFormat=:thread "%thread%", :timestamp %timestamp%, :level "%level%", :start "%s", :tx "%s", :end "%s", :tx "%s", :delta "%s"
+#log4j.appender.arquimedes.host=10.3.2.121
+#log4j.appender.arquimedes.port=7777
+log4j.appender.arquimedes.host=127.0.0.1
+log4j.appender.arquimedes.port=55555
+
+log4j.appender.arquimedes.reconnectionTime=10000
+log4j.appender.arquimedes.maxQueue=5
+log4j.appender.arquimedes.sendDelta=1000
+```
 
 ## Features
-For ednFormat key at properties file, there are some keywords:
-%thread% - Thread name
-%timestamp% - Timestamp of logging
-%level% - Logging level
-%mensaje% - Logging Message
-%s - Strings associated to regexp groups.
-
-#Console
-log4j.appender.console=org.apache.log4j.ConsoleAppender
-log4j.appender.console.layout=org.apache.log4j.PatternLayout
-
-# File
-log4j.appender.FILE=org.apache.log4j.FileAppender
-log4j.appender.FILE.File=${log}/log.out
-log4j.appender.FILE.layout=org.apache.log4j.PatternLayout
-log4j.appender.FILE.layout.conversionPattern=%m%n
+For ednFormat key at properties file, there are some keywords:  
+%thread% - Thread name  
+%timestamp% - Timestamp of logging  
+%level% - Logging level  
+%mensaje% - Logging Message  
+%s - Strings associated to regexp groups  
 
 
 #Javadoc
