@@ -32,13 +32,9 @@ log4j.appender.arquimides.sendDelta=1000
 ## Features
 For ednFormat key at properties file, there are some keywords:
 %thread% - Thread name
-
 %timestamp% - Timestamp of logging
-
 %level% - Logging level
-
 %mensaje% - Logging Message
-
 %s - Strings associated to regexp groups.
 
 #Console
