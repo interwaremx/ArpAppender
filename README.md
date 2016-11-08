@@ -27,8 +27,6 @@ log4j.rootLogger = DEBUG, FILE, arquimedes
 log4j.appender.arquimedes=mx.com.interware.arp.appender.ArquimidesAppender
 log4j.appender.arquimedes.regexp=.*(EJECUTANDO) +([a-zA-Z0-9]+).*time .>>.*|.*(FINALIZANDO) +([a-zA-Z0-9]+).*time .>> +([0-9]+).*
 log4j.appender.arquimedes.ednFormat=:thread "%thread%", :timestamp %timestamp%, :level "%level%", :start "%s", :tx "%s", :end "%s", :tx "%s", :delta "%s"
-#log4j.appender.arquimedes.host=10.3.2.121
-#log4j.appender.arquimedes.port=7777
 log4j.appender.arquimedes.host=127.0.0.1
 log4j.appender.arquimedes.port=55555
 
