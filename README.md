@@ -29,7 +29,6 @@ log4j.appender.arquimedes.regexp=.*(EJECUTANDO) +([a-zA-Z0-9]+).*time .>>.*|.*(F
 log4j.appender.arquimedes.ednFormat=:thread "%thread%", :timestamp %timestamp%, :level "%level%", :start "%s", :tx "%s", :end "%s", :tx "%s", :delta "%s"
 log4j.appender.arquimedes.host=127.0.0.1
 log4j.appender.arquimedes.port=55555
-
 log4j.appender.arquimedes.reconnectionTime=10000
 log4j.appender.arquimedes.maxQueue=5
 log4j.appender.arquimedes.sendDelta=1000
