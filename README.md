@@ -47,5 +47,5 @@ For ednFormat key at properties file, there are some keywords:
 ## Javadoc
 https://interwaremx.github.io/ArpAppender/javadoc/
 
-## Using Log4J2?
+## Using Log4J v2?
 https://github.com/interwaremx/ArpAppender-for-Log4j2
